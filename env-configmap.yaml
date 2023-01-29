@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  AWS_BUCKET: mykermitmediabucket-dev
+  AWS_PROFILE: default
+  AWS_REGION: eu-east-1
+  JWT_SECRET: udagramjwtsecret
+  POSTGRES_DB: MyUdagramDB
+  POSTGRES_HOST: myudagramdb.crhownqrwnyo.us-east-1.rds.amazonaws.com
+  URL: http://localhost:8100
+  PORT: "8000"
+metadata:
+  name: env-config
