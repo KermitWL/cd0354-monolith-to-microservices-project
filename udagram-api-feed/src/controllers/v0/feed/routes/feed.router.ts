@@ -34,6 +34,7 @@ router.get('/', async (req: Request, res: Response) => {
       item.url = AWS.getGetSignedUrl(item.url);
     }
   });
+  console.log("all feed items requested, returned " + items.count + " items");
   res.send(items);
 });
 
