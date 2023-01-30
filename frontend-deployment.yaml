@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: kermitwl/udagram-frontend:latest
+        image: kermitwl/udagram-frontend:v1
         ports:
-        - containerPort: 8080
+        - containerPort: 8100
 

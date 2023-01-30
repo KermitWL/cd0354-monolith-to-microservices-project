@@ -15,5 +15,3 @@ spec:
     app: backend-user
   sessionAffinity: None
   type: ClusterIP
-status:
-  loadBalancer: {}

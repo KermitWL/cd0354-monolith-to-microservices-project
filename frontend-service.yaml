@@ -1,19 +1,16 @@
 apiVersion: v1
 kind: Service
 metadata:
-  labels:
-    app: frontend
   name: frontend
-  namespace: default
-  selfLink: /api/v1/namespaces/default/services/frontend
+  labels:
+    service: frontend
+#  namespace: default
+#  selfLink: /api/v1/namespaces/default/services/frontend
 spec:
   ports:
-  - port: 8080
-    protocol: TCP
-    targetPort: 8080
+  - name: "8100"
+    port: 8100
+    targetPort: 8100
   selector:
-    app: frontend
-  sessionAffinity: None
+    service: frontend
   type: ClusterIP
-status:
-  loadBalancer: {}

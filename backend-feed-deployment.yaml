@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: backend-feed
-        image: kermitwl/udagram-api-feed:latest
+        image: kermitwl/udagram-api-feed:v1
         env:
         - name: POSTGRES_DB
           valueFrom:
